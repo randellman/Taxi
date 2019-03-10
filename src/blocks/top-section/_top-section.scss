@@ -1,0 +1,30 @@
+$top-section-xs-h: 450px;
+$top-section-md-h: 700px;
+$top-section-lg-h: 740px;
+
+.top-section {
+	position: relative;
+	background: {
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}	
+}
+
+@include media-breakpoint-only(xs) {
+	.top-section {
+	    min-height: $top-section-xs-h;
+	}    
+}
+
+@include media-breakpoint-between(sm, md) {
+	.top-section {
+	    min-height: $top-section-md-h;
+	}    
+}
+
+@include media-breakpoint-up(lg) {
+	.top-section {
+	    min-height: $top-section-lg-h;
+	}
+}

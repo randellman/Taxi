@@ -1,0 +1,61 @@
+$bookInpBordCol: #e4e4e4;
+$bookPlHoldCol: #4b4b4b;
+$input-w: 45%;
+$input-last-w: 100%;
+
+.booking-form {
+	background-color: $main-light;
+	box-shadow: 0 0 43px rgba(0, 0, 0, 0.07);
+
+	&__title {
+		padding: 25px 35px;
+		background-color: $main-dark;
+		color: $main-light;
+		text-transform: uppercase;
+		text-align: left;
+		font-weight: 900;
+	}
+
+	&__cab {
+		color: $main-color;
+	}
+
+	&__inputs {
+		padding: 35px 20px 20px 35px;
+	}
+
+	&__input {
+		border: none;
+		line-height: 4;
+		border-bottom: 3px solid $bookInpBordCol;
+		font-size: 20px;
+		color: $main-dark;
+		text-transform: capitalize;
+		width: $input-w;
+
+		&::placeholder {
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: capitalize;
+		}
+
+		&:nth-child(odd) {
+
+			&::placeholder {
+				color: $main-dark;
+			}
+		}
+
+		&:nth-child(even) {
+
+			&::placeholder {
+				color: $bookPlHoldCol;
+			}
+		}	
+
+		&_last {
+			width: $input-last-w;
+			margin-bottom: 45px;
+		}
+	}
+}

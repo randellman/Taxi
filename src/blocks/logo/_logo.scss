@@ -1,0 +1,28 @@
+.logo {
+	font-weight: 900;
+
+	&__name {
+		padding-left: 3px;
+		
+		&-item {
+			font-size: 40px;
+
+			&_small {
+				color: $main-light;
+				text-transform: capitalize;
+			}
+
+			&_big {
+				color: $main-color;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	&__text {
+		color: $main-light;
+		font-size: 15px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+}

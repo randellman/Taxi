@@ -1,0 +1,86 @@
+$inform-img-w: 830px;
+
+.inform {
+	position: relative;
+	padding-bottom: 80px;
+	background-color: $main-color;
+	color: $main-dark;
+
+	&__advertising {
+		font-weight: 900;
+		padding-bottom: 25px;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 45px;
+		padding-bottom: 40px;
+	}
+
+	&__text {
+		font-weight: 400;
+		padding-bottom: 80px;
+	}
+
+	&__img {
+		padding: 0 10px;
+		max-width: $inform-img-w;
+	}
+}
+
+@include media-breakpoint-only(xs) {
+	.inform {
+
+		&__img {
+			margin-top: -120px;
+		}
+	}
+}
+
+
+@include media-breakpoint-only(sm) {
+	.inform {
+
+		&__img {
+			margin-top: -220px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.inform {
+
+		&__introduce {
+			padding: 70px 0;		
+		}
+	}	
+}		
+
+@include media-breakpoint-only(md) {
+	.inform {
+
+		&__img {
+			margin-top: -300px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.inform {
+
+		&__img {
+			margin: -340px auto 0;
+		}
+
+		&__content {
+			padding: 40px 0 70px;
+		}
+
+		&__introduce {
+			text-align: left;
+			margin-right: 75px;		
+		}
+	}
+}

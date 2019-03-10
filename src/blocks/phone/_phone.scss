@@ -1,0 +1,25 @@
+.phone {
+	background-color: $main-color;
+	padding: 75px 0 90px;
+	color: $main-dark;
+
+	&__text {
+		font-size: 35px;
+		text-transform: uppercase;
+		padding-bottom: 40px;
+	}
+
+	&__link {
+		display: inline-block;
+		color: $main-dark;
+	}
+
+	&__number {
+		display: inline-block;
+		font-weight: 900;
+
+		&:hover {
+			text-shadow: 0 1px 3px $main-dark;
+		}
+	}
+}

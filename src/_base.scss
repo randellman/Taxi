@@ -1,0 +1,81 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+
+input {
+	outline: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+button {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.row {
+	margin: 0 !important;
+}
+
+@include media-breakpoint-down(xs) {
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 45px;
+	}
+
+	h3 {
+		font-size: 40px;
+	}
+
+	h4 {
+		font-size: 35px;
+	}
+
+	h5 {
+		font-size: 25px;
+	}
+
+	h6 {
+		font-size: 20px;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	h1 {
+		font-size: 77px;
+	}
+
+	h2 {
+		font-size: 72px;
+	}
+
+	h3 {
+		font-size: 50px;
+	}
+
+	h4 {
+		font-size: 44px;
+	}
+
+	h5 {
+		font-size: 35px;
+	}
+
+	h6 {
+		font-size: 30px;
+	}
+}

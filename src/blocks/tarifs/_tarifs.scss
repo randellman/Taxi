@@ -1,0 +1,101 @@
+$tarifs-bg: #f5f4f2;
+$tarifs-img-w: 365px; 
+$tarifs-corner-w: 74px;
+$tarifs-corner-h: 74px;
+
+.tarifs {
+	padding-top: 60px;
+
+	&__title-wrap {
+		padding-bottom: 50px;
+	}
+
+	@include title-style;
+
+	&__item {
+		position: relative;
+		background-color: $tarifs-bg;
+		margin: 85px 0 40px;
+		padding: 0 30px;
+
+		&:hover {
+			background-color: $main-color;
+			transition: .5s;
+
+			.tarifs__price {
+				color: $main-dark;
+				transition: .5s;
+			}
+
+			.more-btn_tarifs {
+				background-color: $main-dark !important;
+				color: $main-light;
+				cursor: pointer;
+				transition: .5s;	
+			}
+
+			.tarifs__corner {
+				display: inline-block;
+				transition: .5s;
+			}
+		}
+	}
+
+	&__img {
+		max-width: $tarifs-img-w;
+		margin-top: -65px;
+		padding-bottom: 30px;
+	}
+
+	&__class {
+		padding-bottom: 30px;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		padding-bottom: 40px;
+		color: $main-dark;
+	}
+
+	&__price {
+		padding-bottom: 35px;
+		color: $main-color;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		margin-bottom: 25px;
+	}
+
+	&__corner {
+		display: none;
+		width: $tarifs-corner-w;
+		height: $tarifs-corner-h;
+		position: absolute;
+		bottom: 0;
+    	right: 0;
+	}
+}
+
+@include media-breakpoint-only(lg) {
+	.tarifs {
+
+		&__img {
+			margin-top: -55px;
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.tarifs {
+
+		&__item {
+
+			&:not(:last-child) {
+				margin-right: 35px;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.banner {
+	text-transform: uppercase;
+	padding: 50px 0px;
+
+	&__title {
+		color: $main-color;
+		padding-bottom: 20px;
+		font-weight: 900;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__number {
+		color: $main-light;
+		padding-bottom: 10px;
+		font-weight: 900;
+
+		&:hover {
+			text-shadow: 0 1px 3px $main-light;
+		}
+	}
+
+	&__web-address {
+		display: block;
+		color: $main-light;
+		font-size: 20px;
+		letter-spacing: 10px;
+	}
+}
+

@@ -1,0 +1,59 @@
+@mixin main-hover {
+	&:hover {
+		background-color: $main-color !important;
+		color: $main-dark;
+		cursor: pointer;
+		transition: .5s;
+	}
+}
+
+@mixin main-hover-reverse {
+	&:hover {
+		background-color: $main-dark !important;
+		color: $main-light;
+		cursor: pointer;
+		transition: .5s;
+	}
+}
+
+@mixin slicknav-hover {
+	&:hover {
+		background-color: $main-color !important;
+		transition: .5s;
+		.slicknav_menutxt {
+			color: $main-dark;		
+		}
+		.slicknav_icon-bar {
+			background-color: $main-dark;
+		}
+	}
+}
+
+@mixin title-style {
+	&__title {
+		font-weight: 900;
+		text-transform: uppercase;
+
+		&_head {
+			color: $main-color;
+		}
+
+		&_foot {
+
+			&-white {
+				color: $main-light;
+			}
+
+			&-black {
+				color: $main-dark;
+			}
+		}
+	}
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

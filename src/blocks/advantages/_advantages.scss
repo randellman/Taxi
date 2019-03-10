@@ -1,0 +1,55 @@
+.advantages {
+	padding: 80px 0px 75px;
+	background: {
+		position: center;
+		size: cover;
+		repeat: no-repeat;
+	}
+
+	&__title-wrap {
+		padding-bottom: 100px;
+	}
+
+	@include title-style;
+
+	&__item {
+		text-align: left;
+		padding-bottom: 85px;
+	}
+
+	&__icon {
+		max-width: 81px;
+		max-height: 81px;
+		padding: 30px;
+		background-color: $main-color;
+		color: $main-dark;
+		font-size: 30px;
+		border-radius: 40px;
+	}
+
+	&__point {
+		color: $main-color;
+		font-size: 25px;
+		font-weight: 900;
+		text-transform: uppercase;
+		padding-bottom: 25px;
+	}
+
+	&__text {
+		color: $main-light;
+		padding-top: 25px;
+
+		&-wrap {
+			padding-left: 35px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.advantages {
+
+		&__item {
+			flex-basis: 45%;
+		}
+	}
+}

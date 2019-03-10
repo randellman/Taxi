@@ -1,0 +1,41 @@
+.header {
+
+	&__item {
+
+		&_logo {
+			padding: 0;
+		}
+
+		&_nav {
+			padding: 0;
+		}
+	}
+}
+
+@include media-breakpoint-only(sm) {
+	.header {
+
+		&__item {
+
+			&_logo {
+				padding-bottom: 30px;
+			}
+
+			&_nav {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.header {
+		padding: 20px 0;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header {
+		padding: 40px 50px 50px;
+	}
+}
