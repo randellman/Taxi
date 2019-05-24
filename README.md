@@ -1,1 +1,2 @@
 # Taxi
+npm run build
